@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation</title>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/lists.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <button onclick="test()"></button>
-    <div></div>
+    <label for="queryInput">Query:</label>
+    <input id="queryInput" type="text" value="material(fire)." />
+    <button type="button" id="runQueryButton">Run query</button>
+    <pre id="results"></pre>
 </body>
 </html>
